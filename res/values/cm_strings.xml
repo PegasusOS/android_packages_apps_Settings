@@ -13,7 +13,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- About phone screen, status item label  [CHAR LIMIT=60] -->
     <string name="pegasusos_version">PegasusOS version</string>
+    <string name="vendor_security_patch">Vendor security patch level</string>
 
     <!-- Mobile network setting screen, summary of Mobile data switch preference when the network
          is unavailable, the preference selection will be disabled. [CHAR LIMIT=NONE] -->
