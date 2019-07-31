@@ -34,6 +34,14 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
+    <!-- PegasusOS -->
+    <Preference
+        android:key="pegasusos_version"
+        android:title="@string/pegasusos_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.PegasusOSVersionPreferenceController"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
