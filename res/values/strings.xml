@@ -12219,4 +12219,8 @@
     <string name="deny_new_usb_summary">Control support for USB peripherals such as input (mice, keyboards, joysticks) and storage devices.</string>
     <string name="keyguard_camera_title">Screen lock camera access</string>
     <string name="keyguard_camera_summary">Allow camera access when the device is locked</string>
+
+    <!-- Partial screenshot -->
+    <string name="click_partial_screenshot_title">Click to partial screenshot</string>
+    <string name="click_partial_screenshot_summary">Short click Volume Down and Power to take partial screenshot</string>
 </resources>
