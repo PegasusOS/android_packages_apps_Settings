@@ -51,4 +51,9 @@
     <string name="data_usage_app_restrict_vpn_summary">Enable usage of VPN data</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
     <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
+
+    <!-- Button text for adding a managed profile [CHAR LIMIT=25] -->
+    <string name="user_add_managed_profile_item_title">Work profile</string>
+    <!-- Summary for add managed profile entry in the choice dialog [CHAR LIMIT=none] -->
+    <string name="user_add_managed_profile_item_summary">Work profiles share the launcher, notifications, and recent tasks with the user</string>
 </resources>
