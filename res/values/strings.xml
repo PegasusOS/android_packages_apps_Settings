@@ -12223,4 +12223,8 @@
     <!-- Partial screenshot -->
     <string name="click_partial_screenshot_title">Click to partial screenshot</string>
     <string name="click_partial_screenshot_summary">Short click Volume Down and Power to take partial screenshot</string>
+
+    <!-- Volume panel on left -->
+    <string name="volume_panel_on_left_title">Show panel on left</string>
+    <string name="volume_panel_on_left_summary">Display volume panel on the left side of the screen</string>
 </resources>

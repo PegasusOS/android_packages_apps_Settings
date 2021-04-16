@@ -98,6 +98,13 @@
         android:order="-138"
         settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
 
+    <!-- VolumePanel on left -->
+    <com.android.settings.pegasus.SecureSettingSwitchPreference
+        android:key="volume_panel_on_left"
+        android:title="@string/volume_panel_on_left_title"
+        android:summary="@string/volume_panel_on_left_summary"
+        android:defaultValue="false" />
+
     <!-- Also vibrate for calls -->
     <Preference
         android:fragment="com.android.settings.sound.VibrateForCallsPreferenceFragment"
