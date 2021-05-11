@@ -21,6 +21,10 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <Preference
+        android:key="about_animation"
+        android:layout="@layout/about_animation" />
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
