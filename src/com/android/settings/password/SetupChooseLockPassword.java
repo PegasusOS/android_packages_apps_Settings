@@ -151,17 +151,17 @@ public class SetupChooseLockPassword extends ChooseLockPassword {
         protected void updateUi() {
             super.updateUi();
             // Show the skip button during SUW but not during Settings > Biometric Enrollment
-            if (mUiStage == Stage.Introduction) {
+            /* if (mUiStage == Stage.Introduction) {
                 mSkipOrClearButton.setText(getActivity(), R.string.skip_label);
                 mLeftButtonIsSkip = true;
-            } else {
+            } else { */
                 mSkipOrClearButton.setText(getActivity(), R.string.lockpassword_clear_label);
                 mLeftButtonIsSkip = false;
-            }
+            //}
 
             if (mOptionsButton != null) {
                 mOptionsButton.setVisibility(
-                        mUiStage == Stage.Introduction ? View.VISIBLE : View.GONE);
+                        /* mUiStage == Stage.Introduction ? View.VISIBLE :*/ View.GONE);
             }
         }
     }
