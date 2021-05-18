@@ -222,7 +222,7 @@ public class ChooseLockGeneric extends SettingsActivity {
             mForFace = intent.getBooleanExtra(
                     ChooseLockSettingsHelper.EXTRA_KEY_FOR_FACE, false);
             mRequestedMinComplexity = intent
-                    .getIntExtra(EXTRA_KEY_REQUESTED_MIN_COMPLEXITY, PASSWORD_COMPLEXITY_NONE);
+                    .getIntExtra(EXTRA_KEY_REQUESTED_MIN_COMPLEXITY, DevicePolicyManager.PASSWORD_QUALITY_SOMETHING);
             mCallerAppName =
                     intent.getStringExtra(EXTRA_KEY_CALLER_APP_NAME);
             mIsCallingAppAdmin = intent
