@@ -129,9 +129,9 @@ public class SetupChooseLockPattern extends ChooseLockPattern {
             }
 
             if (stage.leftMode == LeftButtonMode.Gone && stage == Stage.Introduction) {
-                mSkipOrClearButton.setVisibility(View.VISIBLE);
+                mSkipOrClearButton.setVisibility(View.GONE);
                 mSkipOrClearButton.setText(getActivity(), R.string.skip_label);
-                mLeftButtonIsSkip = true;
+                mLeftButtonIsSkip = false;
             } else {
                 mLeftButtonIsSkip = false;
             }

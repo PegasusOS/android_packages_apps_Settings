@@ -46,6 +46,8 @@
 
     <com.android.settingslib.RestrictedPreference
             android:key="unlock_set_do_later"
+            android:enabled="false"
+            android:clickable="false"
             android:title="@string/unlock_set_do_later_title"
             android:persistent="false"/>
 
