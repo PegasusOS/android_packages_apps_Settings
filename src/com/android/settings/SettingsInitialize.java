@@ -56,6 +56,7 @@ public class SettingsInitialize extends BroadcastReceiver {
             "com.android.settings.PRIMARY_PROFILE_CONTROLLED";
     private static final String WEBVIEW_IMPLEMENTATION_ACTIVITY = ".WebViewImplementation";
     private AppOpsManager mAppOpsManager;
+    private static final String packageList[] = {"org.fdroid.fdroid", "com.aurora.store"};
 
     @Override
     public void onReceive(Context context, Intent broadcast) {
@@ -63,12 +64,14 @@ public class SettingsInitialize extends BroadcastReceiver {
         final UserManager um = (UserManager) context.getSystemService(Context.USER_SERVICE);
         UserInfo userInfo = um.getUserInfo(UserHandle.myUserId());
         final PackageManager pm = context.getPackageManager();
-        try {
-            int mUid = pm.getApplicationInfo("org.fdroid.fdroid", 0).uid;
-            mAppOpsManager.setMode(AppOpsManager.OP_REQUEST_INSTALL_PACKAGES, mUid, "org.fdroid.fdroid", AppOpsManager.MODE_ALLOWED);
-        }
-        catch(Exception e) {
-           e.printStackTrace();
+        for (String packageName: packageList) {
+            try {
+                int mUid = pm.getApplicationInfo(packageName, 0).uid;
+                mAppOpsManager.setMode(AppOpsManager.OP_REQUEST_INSTALL_PACKAGES, mUid, packageName, AppOpsManager.MODE_ALLOWED);
+            }
+            catch(Exception e) {
+               e.printStackTrace();
+            }
         }
         managedProfileSetup(context, pm, broadcast, userInfo);
         webviewSettingSetup(context, pm, userInfo);
